@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Preserve Enable Test">
+	<test name="Application Test1" preserve-order="false" enabled="true">
+		<classes>
+			<class name="regressionsuite.PreserveTest2" />
+			<class name="regressionsuite.PreserveTest1" />
+		</classes>
+	</test>
+	<test name="Application Test2" preserve-order="true" enabled="false">
+		<classes>
+			<class name="regressionsuite.PreserveTest2" />
+			<class name="regressionsuite.PreserveTest1" />
+		</classes>
+	</test>
+</suite>
