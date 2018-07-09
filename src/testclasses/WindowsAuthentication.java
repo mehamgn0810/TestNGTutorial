@@ -21,7 +21,7 @@ public class WindowsAuthentication {
 
 	@Test
 	public void handleAuthentication() throws IOException, InterruptedException {
-		
+		// Execute the code before driver.get() because the url keeps loading until the Authentication window disappears
 		Runtime.getRuntime().exec(
 				"C:\\Users\\MEHAVARNAN\\Documents\\eclipse-workspace\\OrangeHRM\\AutoIt\\WindowsAuthentication.exe");
 		driver.get(baseUrl);

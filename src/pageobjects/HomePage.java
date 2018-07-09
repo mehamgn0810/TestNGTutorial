@@ -20,5 +20,6 @@ public class HomePage {
 	public void clickLogin() {
 		loginLink.click();		
 	}
+	
 
 }

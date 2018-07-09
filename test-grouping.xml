@@ -12,7 +12,7 @@
 				<include name="sedan"></include>
 			</define>
 			<run>
-				<include name="all" />
+				<include name="nobikes" />
 			</run>
 		</groups>
 		<classes>

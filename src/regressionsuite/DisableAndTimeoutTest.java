@@ -26,7 +26,7 @@ public class DisableAndTimeoutTest {
 		System.out.println("Running -> Test2");
 	}
 
-	@Test(timeOut=300)
+	@Test(timeOut=100)
 	public void test3() throws InterruptedException {
 		System.out.println("Running -> Test3");
 		Thread.sleep(200);

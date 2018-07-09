@@ -13,9 +13,9 @@ public class SoftAsserts {
 	  Sum s = new Sum();
 	  SoftAssert sa = new SoftAssert();
 	  int xs= s.sumInt(1, 2);
-	  sa.assertEquals(xs, 3);
+	  sa.assertEquals(xs, 4);
 	  System.out.println("Assert1 Done");
-	  sa.assertEquals(xs, 3);
+	  sa.assertEquals(xs, 5);
 	  System.out.println("Assert2 Done");
 	  sa.assertAll();
   }

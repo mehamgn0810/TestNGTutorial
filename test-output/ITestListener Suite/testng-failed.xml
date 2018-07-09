@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [ITestListener Suite]">
-  <test thread-count="5" name="ITestListener Test1(failed)">
+  <test name="ITestListener Test1(failed)">
     <classes>
       <class name="testclasses.ListenersTest2">
         <methods>
@@ -12,7 +12,7 @@
       </class> <!-- testclasses.ListenersTest2 -->
     </classes>
   </test> <!-- ITestListener Test1(failed) -->
-  <test thread-count="5" name="ITestListener Test2(failed)">
+  <test name="ITestListener Test2(failed)">
     <classes>
       <class name="testclasses.ListenersTest2">
         <methods>

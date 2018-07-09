@@ -35,13 +35,13 @@ public class ExcelUtility {
 		XSSFCell startCell = boundaryCells[0];
 		XSSFCell endCell = boundaryCells[1];
 
-		int startRow = startCell.getRowIndex() + 1; //0+1=1
+		int startRow = startCell.getRowIndex() + 1; //0+1=1	
 		int endRow = endCell.getRowIndex() - 1;     //4-1=3
 
 		int startCol = startCell.getColumnIndex() + 1;  //0+1=1
 		int endCol = endCell.getColumnIndex() - 1;      //3-1=2
 
-		testData = new String[endRow - startRow + 1][endCol - startCol + 1]; //[2][1]
+		testData = new String[endRow - startRow + 1][endCol - startCol + 1]; //[3][2]
 
 		for (int i = startRow; i < endRow + 1; i++) {
 			for (int j = startCol; j < endCol + 1; j++) {
