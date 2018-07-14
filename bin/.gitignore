@@ -1,11 +1,6 @@
-/appcode/
-/baseclass/
-/ddt/
-/exercises/
-/extentreportstest/
-/listeners/
+/log4j2.xml
 /pageobjects/
-/pageobjects2/
-/regressionsuite/
 /testclasses/
-/utilities/
+/expediapageobjects/
+/expediatests/
+/log4jlogging/

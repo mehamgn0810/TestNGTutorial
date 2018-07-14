@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+	<Appenders>
+		<Console name="console">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %c{1} %msg%n"></PatternLayout>
+		</Console>
+		<RollingFile name="file" fileName="${basePath}/app.log"
+			filePattern="${basePath}/app-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %c{2} %msg%n"></PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true"></TimeBasedTriggeringPolicy>
+				<SizeBasedTriggeringPolicy size="100 KB"></SizeBasedTriggeringPolicy>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="file"></AppenderRef>
+		</Root>
+		<Logger name="log4jtutorial.LoggingConsole" level="info" additivity="false">
+			<AppenderRef ref="file"></AppenderRef>
+		</Logger>
+		<Logger name="log4jlogging.LoggingFile" level="debug" additivity="false">
+			<AppenderRef ref="file"></AppenderRef>
+		</Logger>
+	</Loggers>
+</Configuration>
